@@ -1,7 +1,10 @@
 name = "RectifierExpectations"
 uuid = "ac2a6265-0a3a-47e7-b296-cde1c0db811e"
 authors = ["Nikos Gianniotis <ngiann@gmail.com> and contributors"]
-version = "1.0.0-DEV"
+version = "0.0.1"
+
+[deps]
+StatsFuns = "4c63d2b9-4356-54db-8cca-17b64c39e42c"
 
 [compat]
 julia = "1.6.7"
