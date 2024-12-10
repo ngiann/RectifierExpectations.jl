@@ -1,6 +1,5 @@
 module RectifierExpectations
 
-
     using StatsFuns
 
     Φ = StatsFuns.normcdf
@@ -9,6 +8,6 @@ module RectifierExpectations
 
     include("rectifier_expectations.jl")
 
-    export M, V, Vslow, B, M_V
+    export M, V, Vslow, B, M_V, M_V_B
 
 end
