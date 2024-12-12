@@ -99,6 +99,20 @@ using ThreadsX
 
     end
 
+    @printf("\n consistency check between B and B_alternative\n")
+
+    # Check consistency of B and B_alternative
+    let
+        
+        for _ in 1:REPEATS
+
+            a, b, μ, σ = 3*rand()+0.01, randn()*3, randn()*3, 0.1 + rand()*1.2
+
+            @test abs(B(a, b, μ, σ) - RectifierExpectations.B_alternative(a, b, μ, σ)) < 1e-9
+            
+        end
+
+    end
 
     @printf("\n consistency check between V and Vslow\n")
 
