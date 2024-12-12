@@ -48,7 +48,7 @@ using ThreadsX
         
         for _ in 1:REPEATS
 
-            a, b, μ, σ = 1*rand()+0.01, randn()*3, randn()*3, 0.1 + rand()*1.2
+            a, b, μ, σ = 1*randn(), randn()*3, randn()*3, 0.1 + rand()*1.2
 
             d = Normal(μ,σ)
 
@@ -67,7 +67,7 @@ using ThreadsX
 
         for _ in 1:REPEATS
 
-            a, b, μ, σ = 3*rand()+0.01, randn()*3, randn()*3, 0.1 + rand()*1.2
+            a, b, μ, σ = 3*randn(), randn()*3, randn()*3, 0.1 + rand()*1.2
 
             d = Normal(μ,σ)
 
@@ -86,7 +86,7 @@ using ThreadsX
 
         for _ in 1:REPEATS
 
-            a, b, μ, σ = 3*rand()+0.01, randn()*3, randn()*3, 0.1 + rand()*1.2
+            a, b, μ, σ = 3*randn(), randn()*3, randn()*3, 0.1 + rand()*1.2
 
             d = Normal(μ,σ)
 
@@ -106,7 +106,7 @@ using ThreadsX
         
         for _ in 1:REPEATS
 
-            a, b, μ, σ = 3*rand()+0.01, randn()*3, randn()*3, 0.1 + rand()*1.2
+            a, b, μ, σ = 3*randn(), randn()*3, randn()*3, 0.1 + rand()*1.2
 
             @test abs(B(a, b, μ, σ) - RectifierExpectations.B_alternative(a, b, μ, σ)) < 1e-9
             
@@ -136,7 +136,7 @@ using ThreadsX
         # Check consistency between M_V and M, V
         for _ in 1:REPEATS
 
-            a, b, μ, σ = 3*rand()+0.01, randn()*3, randn()*3, 0.1 + rand()*1.2
+            a, b, μ, σ = 3*randn(), randn()*3, randn()*3, 0.1 + rand()*1.2
 
             M1, V1 = M_V(a, b, μ, σ)
 
@@ -151,7 +151,7 @@ using ThreadsX
         # Check consistency between M_V_B and M, V, B and M_V
         for _ in 1:REPEATS
 
-            a, b, μ, σ = 3*rand()+0.01, randn()*3, randn()*3, 0.1 + rand()*1.2
+            a, b, μ, σ = 3*randn(), randn()*3, randn()*3, 0.1 + rand()*1.2
 
             M1, V1 = M_V(a, b, μ, σ)
 
