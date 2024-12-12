@@ -20,7 +20,7 @@ B(μ, σ) = V(μ, σ) + M(μ, σ)^2
 
 B(α, b, μ, σ) = B(α*μ+b, α*σ)
 
-B_alternative(α, b, μ, σ) = V(α*μ+b, α*σ) + M(α*μ+b, α*σ)^2
+B_alternative(α, b, μ, σ) = V(α*μ+b, α*σ) + M(α*μ+b, α*σ)^2 # used only for verification purposes
 
 #-------------------------------------------------------
 # Variance of rectifier
