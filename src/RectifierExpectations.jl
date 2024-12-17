@@ -2,9 +2,9 @@ module RectifierExpectations
 
     using StatsFuns
 
-    Φ = StatsFuns.normcdf
+    Φ(x) = StatsFuns.normcdf(x)
 
-    ϕ = StatsFuns.normpdf
+    ϕ(x) = StatsFuns.normpdf(x)
 
     include("rectifier_expectations.jl")
 
